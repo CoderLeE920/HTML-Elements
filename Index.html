@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Tricks</title>
+</head>
+<body>
+  <form>
+    <fieldset>
+      <legend>Pick Your Car</legend>
+
+      <div>
+        <label>Color</label>
+      </div>
+      <div>
+<!--A datalist gives you drop down box and lets you choose a the selected options cars, colors, etc..-->
+        <input list="color-list" type="text">
+        <datalist id="color-list">
+          <option value="Red"><option
+          <option value="Green"></option>
+          <option value="Blue"></option>
+          </option>
+        </datalist>
+      </div>
+
+      <br>
+
+      <div>
+        <label>Car Brand</label>
+        <input list="car-list" type="text">
+        <datalist id="car-list">
+          <option value="Honda"></option>
+          <option value="Toyota"></option>
+          <option value="Ford"></option>
+        </datalist>
+      </div>
+
+      <br>
+
+      <div>
+        <label>Customize you Color</label>
+        <input type="color">
+      </div>
+
+      <br>
+
+      <div>
+        <label>Please Schedule a Time</label>
+        <input type="time"> 
+      </div>
+    </fieldset>
+  </form>
+  
+</body>
+</html>
